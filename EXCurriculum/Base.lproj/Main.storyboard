@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5cw-LS-Hwy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yKg-2e-8DU">
+            <objects>
+                <navigationController id="5cw-LS-Hwy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ABS-y1-iaj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zeb-Bd-uKl" kind="relationship" relationship="rootViewController" id="HBl-HR-j0o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ph-Eu-pFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1235" y="17"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rNL-UI-dgR">
+            <objects>
+                <viewController id="Zeb-Bd-uKl" customClass="ViewController" customModule="EXCurriculum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2NJ-VC-O7x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVR-5M-mlG">
+                                <rect key="frame" x="190" y="433" width="34" height="30"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPress:" destination="Zeb-Bd-uKl" eventType="touchUpInside" id="gOb-1c-fmX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kVR-5M-mlG" firstAttribute="centerX" secondItem="2NJ-VC-O7x" secondAttribute="centerX" id="M6R-1b-8Ib"/>
+                            <constraint firstItem="kVR-5M-mlG" firstAttribute="centerY" secondItem="2NJ-VC-O7x" secondAttribute="centerY" id="QVC-wM-uHd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0UI-1U-sNF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e2F-r6-IXF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNM-bf-mFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="17"/>
+        </scene>
+    </scenes>
+</document>

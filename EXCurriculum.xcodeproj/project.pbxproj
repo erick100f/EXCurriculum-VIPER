@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7F98E13234128A90086AB95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E12234128A90086AB95 /* AppDelegate.swift */; };
+		A7F98E15234128A90086AB95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E14234128A90086AB95 /* SceneDelegate.swift */; };
+		A7F98E17234128A90086AB95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E16234128A90086AB95 /* ViewController.swift */; };
+		A7F98E1A234128A90086AB95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E18234128A90086AB95 /* Main.storyboard */; };
+		A7F98E1C234128AB0086AB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E1B234128AB0086AB95 /* Assets.xcassets */; };
+		A7F98E1F234128AB0086AB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E1D234128AB0086AB95 /* LaunchScreen.storyboard */; };
+		A7F98E2A234128AB0086AB95 /* EXCurriculumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E29234128AB0086AB95 /* EXCurriculumTests.swift */; };
+		A7F98E35234128AB0086AB95 /* EXCurriculumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E34234128AB0086AB95 /* EXCurriculumUITests.swift */; };
+		A7F98E45234128E00086AB95 /* EXConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E44234128E00086AB95 /* EXConstants.swift */; };
+		A7F98E4E23412B7F0086AB95 /* EXCurriculumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E4C23412B7F0086AB95 /* EXCurriculumViewController.swift */; };
+		A7F98E4F23412B7F0086AB95 /* EXCurriculumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E4C23412B7F0086AB95 /* EXCurriculumViewController.swift */; };
+		A7F98E5023412B7F0086AB95 /* EXCurriculumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E4C23412B7F0086AB95 /* EXCurriculumViewController.swift */; };
+		A7F98E5123412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E4D23412B7F0086AB95 /* EXCurriculumViewController.xib */; };
+		A7F98E5223412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E4D23412B7F0086AB95 /* EXCurriculumViewController.xib */; };
+		A7F98E5323412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E4D23412B7F0086AB95 /* EXCurriculumViewController.xib */; };
+		A7F98E5623412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E5423412C100086AB95 /* EXHeaderTableViewCell.swift */; };
+		A7F98E5723412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E5423412C100086AB95 /* EXHeaderTableViewCell.swift */; };
+		A7F98E5823412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E5423412C100086AB95 /* EXHeaderTableViewCell.swift */; };
+		A7F98E5923412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E5523412C100086AB95 /* EXHeaderTableViewCell.xib */; };
+		A7F98E5A23412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E5523412C100086AB95 /* EXHeaderTableViewCell.xib */; };
+		A7F98E5B23412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E5523412C100086AB95 /* EXHeaderTableViewCell.xib */; };
+		A7F98E6623412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E6423412C520086AB95 /* EXDescriptionTableViewCell.swift */; };
+		A7F98E6723412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E6423412C520086AB95 /* EXDescriptionTableViewCell.swift */; };
+		A7F98E6823412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E6423412C520086AB95 /* EXDescriptionTableViewCell.swift */; };
+		A7F98E6923412C520086AB95 /* EXDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E6523412C520086AB95 /* EXDescriptionTableViewCell.xib */; };
+		A7F98E6A23412C520086AB95 /* EXDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E6523412C520086AB95 /* EXDescriptionTableViewCell.xib */; };
+		A7F98E6B23412C520086AB95 /* EXDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E6523412C520086AB95 /* EXDescriptionTableViewCell.xib */; };
+		A7F98E6E23412D620086AB95 /* EXDotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E6C23412D620086AB95 /* EXDotTableViewCell.swift */; };
+		A7F98E6F23412D620086AB95 /* EXDotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E6C23412D620086AB95 /* EXDotTableViewCell.swift */; };
+		A7F98E7023412D620086AB95 /* EXDotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E6C23412D620086AB95 /* EXDotTableViewCell.swift */; };
+		A7F98E7123412D620086AB95 /* EXDotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E6D23412D620086AB95 /* EXDotTableViewCell.xib */; };
+		A7F98E7223412D620086AB95 /* EXDotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E6D23412D620086AB95 /* EXDotTableViewCell.xib */; };
+		A7F98E7323412D620086AB95 /* EXDotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E6D23412D620086AB95 /* EXDotTableViewCell.xib */; };
+		A7F98E7A23412D930086AB95 /* EXAppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E7823412D930086AB95 /* EXAppTableViewCell.swift */; };
+		A7F98E7B23412D930086AB95 /* EXAppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E7823412D930086AB95 /* EXAppTableViewCell.swift */; };
+		A7F98E7C23412D930086AB95 /* EXAppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E7823412D930086AB95 /* EXAppTableViewCell.swift */; };
+		A7F98E7D23412D930086AB95 /* EXAppTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E7923412D930086AB95 /* EXAppTableViewCell.xib */; };
+		A7F98E7E23412D930086AB95 /* EXAppTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E7923412D930086AB95 /* EXAppTableViewCell.xib */; };
+		A7F98E7F23412D930086AB95 /* EXAppTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E7923412D930086AB95 /* EXAppTableViewCell.xib */; };
+		A7F98E8223412F080086AB95 /* EXCurriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E8123412F080086AB95 /* EXCurriculum.swift */; };
+		A7F98E8323412F080086AB95 /* EXCurriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E8123412F080086AB95 /* EXCurriculum.swift */; };
+		A7F98E8423412F080086AB95 /* EXCurriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E8123412F080086AB95 /* EXCurriculum.swift */; };
+		A7F98E86234139670086AB95 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E85234139670086AB95 /* UITableView+Extension.swift */; };
+		A7F98E87234139670086AB95 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E85234139670086AB95 /* UITableView+Extension.swift */; };
+		A7F98E88234139670086AB95 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E85234139670086AB95 /* UITableView+Extension.swift */; };
+		A7F98E8B23414AEC0086AB95 /* EXLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E8923414AEC0086AB95 /* EXLoadingTableViewCell.swift */; };
+		A7F98E8C23414AEC0086AB95 /* EXLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E8923414AEC0086AB95 /* EXLoadingTableViewCell.swift */; };
+		A7F98E8D23414AEC0086AB95 /* EXLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E8923414AEC0086AB95 /* EXLoadingTableViewCell.swift */; };
+		A7F98E8E23414AEC0086AB95 /* EXLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E8A23414AEC0086AB95 /* EXLoadingTableViewCell.xib */; };
+		A7F98E8F23414AEC0086AB95 /* EXLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E8A23414AEC0086AB95 /* EXLoadingTableViewCell.xib */; };
+		A7F98E9023414AEC0086AB95 /* EXLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E8A23414AEC0086AB95 /* EXLoadingTableViewCell.xib */; };
+		A7F98E9323414C5F0086AB95 /* EXTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E9123414C5F0086AB95 /* EXTitleTableViewCell.swift */; };
+		A7F98E9423414C5F0086AB95 /* EXTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E9123414C5F0086AB95 /* EXTitleTableViewCell.swift */; };
+		A7F98E9523414C5F0086AB95 /* EXTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E9123414C5F0086AB95 /* EXTitleTableViewCell.swift */; };
+		A7F98E9623414C5F0086AB95 /* EXTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E9223414C5F0086AB95 /* EXTitleTableViewCell.xib */; };
+		A7F98E9723414C5F0086AB95 /* EXTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E9223414C5F0086AB95 /* EXTitleTableViewCell.xib */; };
+		A7F98E9823414C5F0086AB95 /* EXTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E9223414C5F0086AB95 /* EXTitleTableViewCell.xib */; };
+		A7F98E9B234152A90086AB95 /* EXDotDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E99234152A90086AB95 /* EXDotDescriptionTableViewCell.swift */; };
+		A7F98E9C234152A90086AB95 /* EXDotDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E99234152A90086AB95 /* EXDotDescriptionTableViewCell.swift */; };
+		A7F98E9D234152A90086AB95 /* EXDotDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E99234152A90086AB95 /* EXDotDescriptionTableViewCell.swift */; };
+		A7F98E9E234152A90086AB95 /* EXDotDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E9A234152A90086AB95 /* EXDotDescriptionTableViewCell.xib */; };
+		A7F98E9F234152A90086AB95 /* EXDotDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E9A234152A90086AB95 /* EXDotDescriptionTableViewCell.xib */; };
+		A7F98EA0234152A90086AB95 /* EXDotDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E9A234152A90086AB95 /* EXDotDescriptionTableViewCell.xib */; };
+		A7F98EA323415B6D0086AB95 /* EXExperticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98EA123415B6D0086AB95 /* EXExperticeTableViewCell.swift */; };
+		A7F98EA423415B6D0086AB95 /* EXExperticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98EA123415B6D0086AB95 /* EXExperticeTableViewCell.swift */; };
+		A7F98EA523415B6D0086AB95 /* EXExperticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98EA123415B6D0086AB95 /* EXExperticeTableViewCell.swift */; };
+		A7F98EA623415B6D0086AB95 /* EXExperticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98EA223415B6D0086AB95 /* EXExperticeTableViewCell.xib */; };
+		A7F98EA723415B6D0086AB95 /* EXExperticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98EA223415B6D0086AB95 /* EXExperticeTableViewCell.xib */; };
+		A7F98EA823415B6D0086AB95 /* EXExperticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98EA223415B6D0086AB95 /* EXExperticeTableViewCell.xib */; };
+		A7F98EAB23415B970086AB95 /* EXEXperticeDotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98EA923415B970086AB95 /* EXEXperticeDotTableViewCell.swift */; };
+		A7F98EAC23415B970086AB95 /* EXEXperticeDotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98EA923415B970086AB95 /* EXEXperticeDotTableViewCell.swift */; };
+		A7F98EAD23415B970086AB95 /* EXEXperticeDotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98EA923415B970086AB95 /* EXEXperticeDotTableViewCell.swift */; };
+		A7F98EAE23415B970086AB95 /* EXEXperticeDotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98EAA23415B970086AB95 /* EXEXperticeDotTableViewCell.xib */; };
+		A7F98EAF23415B970086AB95 /* EXEXperticeDotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98EAA23415B970086AB95 /* EXEXperticeDotTableViewCell.xib */; };
+		A7F98EB023415B970086AB95 /* EXEXperticeDotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98EAA23415B970086AB95 /* EXEXperticeDotTableViewCell.xib */; };
+		A7F98EB2234160A50086AB95 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98EB1234160A50086AB95 /* UIImage+Extension.swift */; };
+		A7F98EB3234160A50086AB95 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98EB1234160A50086AB95 /* UIImage+Extension.swift */; };
+		A7F98EB4234160A50086AB95 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98EB1234160A50086AB95 /* UIImage+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7F98E26234128AB0086AB95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7F98E07234128A80086AB95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7F98E0E234128A80086AB95;
+			remoteInfo = EXCurriculum;
+		};
+		A7F98E31234128AB0086AB95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7F98E07234128A80086AB95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7F98E0E234128A80086AB95;
+			remoteInfo = EXCurriculum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7F98E0F234128A90086AB95 /* EXCurriculum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EXCurriculum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F98E12234128A90086AB95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7F98E14234128A90086AB95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A7F98E16234128A90086AB95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7F98E19234128A90086AB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7F98E1B234128AB0086AB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7F98E1E234128AB0086AB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7F98E20234128AB0086AB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F98E25234128AB0086AB95 /* EXCurriculumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EXCurriculumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F98E29234128AB0086AB95 /* EXCurriculumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXCurriculumTests.swift; sourceTree = "<group>"; };
+		A7F98E2B234128AB0086AB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F98E30234128AB0086AB95 /* EXCurriculumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EXCurriculumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F98E34234128AB0086AB95 /* EXCurriculumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXCurriculumUITests.swift; sourceTree = "<group>"; };
+		A7F98E36234128AB0086AB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F98E44234128E00086AB95 /* EXConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXConstants.swift; sourceTree = "<group>"; };
+		A7F98E4C23412B7F0086AB95 /* EXCurriculumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXCurriculumViewController.swift; sourceTree = "<group>"; };
+		A7F98E4D23412B7F0086AB95 /* EXCurriculumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXCurriculumViewController.xib; sourceTree = "<group>"; };
+		A7F98E5423412C100086AB95 /* EXHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		A7F98E5523412C100086AB95 /* EXHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		A7F98E6423412C520086AB95 /* EXDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		A7F98E6523412C520086AB95 /* EXDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		A7F98E6C23412D620086AB95 /* EXDotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXDotTableViewCell.swift; sourceTree = "<group>"; };
+		A7F98E6D23412D620086AB95 /* EXDotTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXDotTableViewCell.xib; sourceTree = "<group>"; };
+		A7F98E7823412D930086AB95 /* EXAppTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXAppTableViewCell.swift; sourceTree = "<group>"; };
+		A7F98E7923412D930086AB95 /* EXAppTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXAppTableViewCell.xib; sourceTree = "<group>"; };
+		A7F98E8123412F080086AB95 /* EXCurriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXCurriculum.swift; sourceTree = "<group>"; };
+		A7F98E85234139670086AB95 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		A7F98E8923414AEC0086AB95 /* EXLoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXLoadingTableViewCell.swift; sourceTree = "<group>"; };
+		A7F98E8A23414AEC0086AB95 /* EXLoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXLoadingTableViewCell.xib; sourceTree = "<group>"; };
+		A7F98E9123414C5F0086AB95 /* EXTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXTitleTableViewCell.swift; sourceTree = "<group>"; };
+		A7F98E9223414C5F0086AB95 /* EXTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXTitleTableViewCell.xib; sourceTree = "<group>"; };
+		A7F98E99234152A90086AB95 /* EXDotDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXDotDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		A7F98E9A234152A90086AB95 /* EXDotDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXDotDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		A7F98EA123415B6D0086AB95 /* EXExperticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXExperticeTableViewCell.swift; sourceTree = "<group>"; };
+		A7F98EA223415B6D0086AB95 /* EXExperticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXExperticeTableViewCell.xib; sourceTree = "<group>"; };
+		A7F98EA923415B970086AB95 /* EXEXperticeDotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXEXperticeDotTableViewCell.swift; sourceTree = "<group>"; };
+		A7F98EAA23415B970086AB95 /* EXEXperticeDotTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXEXperticeDotTableViewCell.xib; sourceTree = "<group>"; };
+		A7F98EB1234160A50086AB95 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7F98E0C234128A80086AB95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F98E22234128AB0086AB95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F98E2D234128AB0086AB95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7F98E06234128A80086AB95 = {
+			isa = PBXGroup;
+			children = (
+				A7F98E11234128A90086AB95 /* EXCurriculum */,
+				A7F98E28234128AB0086AB95 /* EXCurriculumTests */,
+				A7F98E33234128AB0086AB95 /* EXCurriculumUITests */,
+				A7F98E10234128A90086AB95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7F98E10234128A90086AB95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7F98E0F234128A90086AB95 /* EXCurriculum.app */,
+				A7F98E25234128AB0086AB95 /* EXCurriculumTests.xctest */,
+				A7F98E30234128AB0086AB95 /* EXCurriculumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7F98E11234128A90086AB95 /* EXCurriculum */ = {
+			isa = PBXGroup;
+			children = (
+				A7F98E8023412EEE0086AB95 /* Codables */,
+				A7F98E4623412AB70086AB95 /* Controllers */,
+				A7F98E4823412B060086AB95 /* Cells */,
+				A7F98E43234128CE0086AB95 /* Constants */,
+				A7F98E42234128C10086AB95 /* Extensions */,
+				A7F98E12234128A90086AB95 /* AppDelegate.swift */,
+				A7F98E14234128A90086AB95 /* SceneDelegate.swift */,
+				A7F98E16234128A90086AB95 /* ViewController.swift */,
+				A7F98E18234128A90086AB95 /* Main.storyboard */,
+				A7F98E1B234128AB0086AB95 /* Assets.xcassets */,
+				A7F98E1D234128AB0086AB95 /* LaunchScreen.storyboard */,
+				A7F98E20234128AB0086AB95 /* Info.plist */,
+			);
+			path = EXCurriculum;
+			sourceTree = "<group>";
+		};
+		A7F98E28234128AB0086AB95 /* EXCurriculumTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7F98E29234128AB0086AB95 /* EXCurriculumTests.swift */,
+				A7F98E2B234128AB0086AB95 /* Info.plist */,
+			);
+			path = EXCurriculumTests;
+			sourceTree = "<group>";
+		};
+		A7F98E33234128AB0086AB95 /* EXCurriculumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7F98E34234128AB0086AB95 /* EXCurriculumUITests.swift */,
+				A7F98E36234128AB0086AB95 /* Info.plist */,
+			);
+			path = EXCurriculumUITests;
+			sourceTree = "<group>";
+		};
+		A7F98E42234128C10086AB95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7F98E85234139670086AB95 /* UITableView+Extension.swift */,
+				A7F98EB1234160A50086AB95 /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7F98E43234128CE0086AB95 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A7F98E44234128E00086AB95 /* EXConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A7F98E4623412AB70086AB95 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7F98E4C23412B7F0086AB95 /* EXCurriculumViewController.swift */,
+				A7F98E4D23412B7F0086AB95 /* EXCurriculumViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7F98E4823412B060086AB95 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A7F98E4923412B130086AB95 /* Curriculum */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A7F98E4923412B130086AB95 /* Curriculum */ = {
+			isa = PBXGroup;
+			children = (
+				A7F98E5423412C100086AB95 /* EXHeaderTableViewCell.swift */,
+				A7F98E5523412C100086AB95 /* EXHeaderTableViewCell.xib */,
+				A7F98E6423412C520086AB95 /* EXDescriptionTableViewCell.swift */,
+				A7F98E6523412C520086AB95 /* EXDescriptionTableViewCell.xib */,
+				A7F98E9123414C5F0086AB95 /* EXTitleTableViewCell.swift */,
+				A7F98E9223414C5F0086AB95 /* EXTitleTableViewCell.xib */,
+				A7F98E6C23412D620086AB95 /* EXDotTableViewCell.swift */,
+				A7F98E6D23412D620086AB95 /* EXDotTableViewCell.xib */,
+				A7F98E99234152A90086AB95 /* EXDotDescriptionTableViewCell.swift */,
+				A7F98E9A234152A90086AB95 /* EXDotDescriptionTableViewCell.xib */,
+				A7F98E7823412D930086AB95 /* EXAppTableViewCell.swift */,
+				A7F98E7923412D930086AB95 /* EXAppTableViewCell.xib */,
+				A7F98E8923414AEC0086AB95 /* EXLoadingTableViewCell.swift */,
+				A7F98E8A23414AEC0086AB95 /* EXLoadingTableViewCell.xib */,
+				A7F98EA123415B6D0086AB95 /* EXExperticeTableViewCell.swift */,
+				A7F98EA223415B6D0086AB95 /* EXExperticeTableViewCell.xib */,
+				A7F98EA923415B970086AB95 /* EXEXperticeDotTableViewCell.swift */,
+				A7F98EAA23415B970086AB95 /* EXEXperticeDotTableViewCell.xib */,
+			);
+			path = Curriculum;
+			sourceTree = "<group>";
+		};
+		A7F98E8023412EEE0086AB95 /* Codables */ = {
+			isa = PBXGroup;
+			children = (
+				A7F98E8123412F080086AB95 /* EXCurriculum.swift */,
+			);
+			path = Codables;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7F98E0E234128A80086AB95 /* EXCurriculum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F98E39234128AB0086AB95 /* Build configuration list for PBXNativeTarget "EXCurriculum" */;
+			buildPhases = (
+				A7F98E0B234128A80086AB95 /* Sources */,
+				A7F98E0C234128A80086AB95 /* Frameworks */,
+				A7F98E0D234128A80086AB95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EXCurriculum;
+			productName = EXCurriculum;
+			productReference = A7F98E0F234128A90086AB95 /* EXCurriculum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7F98E24234128AB0086AB95 /* EXCurriculumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F98E3C234128AB0086AB95 /* Build configuration list for PBXNativeTarget "EXCurriculumTests" */;
+			buildPhases = (
+				A7F98E21234128AB0086AB95 /* Sources */,
+				A7F98E22234128AB0086AB95 /* Frameworks */,
+				A7F98E23234128AB0086AB95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7F98E27234128AB0086AB95 /* PBXTargetDependency */,
+			);
+			name = EXCurriculumTests;
+			productName = EXCurriculumTests;
+			productReference = A7F98E25234128AB0086AB95 /* EXCurriculumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7F98E2F234128AB0086AB95 /* EXCurriculumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F98E3F234128AB0086AB95 /* Build configuration list for PBXNativeTarget "EXCurriculumUITests" */;
+			buildPhases = (
+				A7F98E2C234128AB0086AB95 /* Sources */,
+				A7F98E2D234128AB0086AB95 /* Frameworks */,
+				A7F98E2E234128AB0086AB95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7F98E32234128AB0086AB95 /* PBXTargetDependency */,
+			);
+			name = EXCurriculumUITests;
+			productName = EXCurriculumUITests;
+			productReference = A7F98E30234128AB0086AB95 /* EXCurriculumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7F98E07234128A80086AB95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Erick Cienfuegos";
+				TargetAttributes = {
+					A7F98E0E234128A80086AB95 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					A7F98E24234128AB0086AB95 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = A7F98E0E234128A80086AB95;
+					};
+					A7F98E2F234128AB0086AB95 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = A7F98E0E234128A80086AB95;
+					};
+				};
+			};
+			buildConfigurationList = A7F98E0A234128A80086AB95 /* Build configuration list for PBXProject "EXCurriculum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7F98E06234128A80086AB95;
+			productRefGroup = A7F98E10234128A90086AB95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7F98E0E234128A80086AB95 /* EXCurriculum */,
+				A7F98E24234128AB0086AB95 /* EXCurriculumTests */,
+				A7F98E2F234128AB0086AB95 /* EXCurriculumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7F98E0D234128A80086AB95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F98E1F234128AB0086AB95 /* LaunchScreen.storyboard in Resources */,
+				A7F98E9623414C5F0086AB95 /* EXTitleTableViewCell.xib in Resources */,
+				A7F98E1C234128AB0086AB95 /* Assets.xcassets in Resources */,
+				A7F98E7D23412D930086AB95 /* EXAppTableViewCell.xib in Resources */,
+				A7F98EAE23415B970086AB95 /* EXEXperticeDotTableViewCell.xib in Resources */,
+				A7F98E6923412C520086AB95 /* EXDescriptionTableViewCell.xib in Resources */,
+				A7F98E5123412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */,
+				A7F98EA623415B6D0086AB95 /* EXExperticeTableViewCell.xib in Resources */,
+				A7F98E1A234128A90086AB95 /* Main.storyboard in Resources */,
+				A7F98E5923412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */,
+				A7F98E7123412D620086AB95 /* EXDotTableViewCell.xib in Resources */,
+				A7F98E9E234152A90086AB95 /* EXDotDescriptionTableViewCell.xib in Resources */,
+				A7F98E8E23414AEC0086AB95 /* EXLoadingTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F98E23234128AB0086AB95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F98EAF23415B970086AB95 /* EXEXperticeDotTableViewCell.xib in Resources */,
+				A7F98E8F23414AEC0086AB95 /* EXLoadingTableViewCell.xib in Resources */,
+				A7F98E7223412D620086AB95 /* EXDotTableViewCell.xib in Resources */,
+				A7F98E9723414C5F0086AB95 /* EXTitleTableViewCell.xib in Resources */,
+				A7F98E5223412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */,
+				A7F98E7E23412D930086AB95 /* EXAppTableViewCell.xib in Resources */,
+				A7F98E5A23412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */,
+				A7F98EA723415B6D0086AB95 /* EXExperticeTableViewCell.xib in Resources */,
+				A7F98E6A23412C520086AB95 /* EXDescriptionTableViewCell.xib in Resources */,
+				A7F98E9F234152A90086AB95 /* EXDotDescriptionTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F98E2E234128AB0086AB95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F98EB023415B970086AB95 /* EXEXperticeDotTableViewCell.xib in Resources */,
+				A7F98E9023414AEC0086AB95 /* EXLoadingTableViewCell.xib in Resources */,
+				A7F98E7323412D620086AB95 /* EXDotTableViewCell.xib in Resources */,
+				A7F98E9823414C5F0086AB95 /* EXTitleTableViewCell.xib in Resources */,
+				A7F98E5323412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */,
+				A7F98E7F23412D930086AB95 /* EXAppTableViewCell.xib in Resources */,
+				A7F98E5B23412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */,
+				A7F98EA823415B6D0086AB95 /* EXExperticeTableViewCell.xib in Resources */,
+				A7F98E6B23412C520086AB95 /* EXDescriptionTableViewCell.xib in Resources */,
+				A7F98EA0234152A90086AB95 /* EXDotDescriptionTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7F98E0B234128A80086AB95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F98E17234128A90086AB95 /* ViewController.swift in Sources */,
+				A7F98E13234128A90086AB95 /* AppDelegate.swift in Sources */,
+				A7F98E15234128A90086AB95 /* SceneDelegate.swift in Sources */,
+				A7F98E9B234152A90086AB95 /* EXDotDescriptionTableViewCell.swift in Sources */,
+				A7F98EAB23415B970086AB95 /* EXEXperticeDotTableViewCell.swift in Sources */,
+				A7F98E4E23412B7F0086AB95 /* EXCurriculumViewController.swift in Sources */,
+				A7F98E9323414C5F0086AB95 /* EXTitleTableViewCell.swift in Sources */,
+				A7F98EA323415B6D0086AB95 /* EXExperticeTableViewCell.swift in Sources */,
+				A7F98E8B23414AEC0086AB95 /* EXLoadingTableViewCell.swift in Sources */,
+				A7F98E8223412F080086AB95 /* EXCurriculum.swift in Sources */,
+				A7F98E45234128E00086AB95 /* EXConstants.swift in Sources */,
+				A7F98E7A23412D930086AB95 /* EXAppTableViewCell.swift in Sources */,
+				A7F98E6623412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */,
+				A7F98E5623412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */,
+				A7F98EB2234160A50086AB95 /* UIImage+Extension.swift in Sources */,
+				A7F98E6E23412D620086AB95 /* EXDotTableViewCell.swift in Sources */,
+				A7F98E86234139670086AB95 /* UITableView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F98E21234128AB0086AB95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F98E4F23412B7F0086AB95 /* EXCurriculumViewController.swift in Sources */,
+				A7F98E2A234128AB0086AB95 /* EXCurriculumTests.swift in Sources */,
+				A7F98E8C23414AEC0086AB95 /* EXLoadingTableViewCell.swift in Sources */,
+				A7F98EB3234160A50086AB95 /* UIImage+Extension.swift in Sources */,
+				A7F98E8323412F080086AB95 /* EXCurriculum.swift in Sources */,
+				A7F98E9C234152A90086AB95 /* EXDotDescriptionTableViewCell.swift in Sources */,
+				A7F98E6F23412D620086AB95 /* EXDotTableViewCell.swift in Sources */,
+				A7F98EA423415B6D0086AB95 /* EXExperticeTableViewCell.swift in Sources */,
+				A7F98E9423414C5F0086AB95 /* EXTitleTableViewCell.swift in Sources */,
+				A7F98E7B23412D930086AB95 /* EXAppTableViewCell.swift in Sources */,
+				A7F98EAC23415B970086AB95 /* EXEXperticeDotTableViewCell.swift in Sources */,
+				A7F98E5723412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */,
+				A7F98E87234139670086AB95 /* UITableView+Extension.swift in Sources */,
+				A7F98E6723412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F98E2C234128AB0086AB95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F98E5023412B7F0086AB95 /* EXCurriculumViewController.swift in Sources */,
+				A7F98E35234128AB0086AB95 /* EXCurriculumUITests.swift in Sources */,
+				A7F98E8D23414AEC0086AB95 /* EXLoadingTableViewCell.swift in Sources */,
+				A7F98EB4234160A50086AB95 /* UIImage+Extension.swift in Sources */,
+				A7F98E8423412F080086AB95 /* EXCurriculum.swift in Sources */,
+				A7F98E9D234152A90086AB95 /* EXDotDescriptionTableViewCell.swift in Sources */,
+				A7F98E7023412D620086AB95 /* EXDotTableViewCell.swift in Sources */,
+				A7F98EA523415B6D0086AB95 /* EXExperticeTableViewCell.swift in Sources */,
+				A7F98E9523414C5F0086AB95 /* EXTitleTableViewCell.swift in Sources */,
+				A7F98E7C23412D930086AB95 /* EXAppTableViewCell.swift in Sources */,
+				A7F98EAD23415B970086AB95 /* EXEXperticeDotTableViewCell.swift in Sources */,
+				A7F98E5823412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */,
+				A7F98E88234139670086AB95 /* UITableView+Extension.swift in Sources */,
+				A7F98E6823412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7F98E27234128AB0086AB95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7F98E0E234128A80086AB95 /* EXCurriculum */;
+			targetProxy = A7F98E26234128AB0086AB95 /* PBXContainerItemProxy */;
+		};
+		A7F98E32234128AB0086AB95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7F98E0E234128A80086AB95 /* EXCurriculum */;
+			targetProxy = A7F98E31234128AB0086AB95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7F98E18234128A90086AB95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7F98E19234128A90086AB95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7F98E1D234128AB0086AB95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7F98E1E234128AB0086AB95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7F98E37234128AB0086AB95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7F98E38234128AB0086AB95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7F98E3A234128AB0086AB95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EXCurriculum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.firesapps.EXCurriculum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7F98E3B234128AB0086AB95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EXCurriculum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.firesapps.EXCurriculum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7F98E3D234128AB0086AB95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EXCurriculumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.firesapps.EXCurriculumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EXCurriculum.app/EXCurriculum";
+			};
+			name = Debug;
+		};
+		A7F98E3E234128AB0086AB95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EXCurriculumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.firesapps.EXCurriculumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EXCurriculum.app/EXCurriculum";
+			};
+			name = Release;
+		};
+		A7F98E40234128AB0086AB95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EXCurriculumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.firesapps.EXCurriculumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EXCurriculum;
+			};
+			name = Debug;
+		};
+		A7F98E41234128AB0086AB95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EXCurriculumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.firesapps.EXCurriculumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EXCurriculum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7F98E0A234128A80086AB95 /* Build configuration list for PBXProject "EXCurriculum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F98E37234128AB0086AB95 /* Debug */,
+				A7F98E38234128AB0086AB95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7F98E39234128AB0086AB95 /* Build configuration list for PBXNativeTarget "EXCurriculum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F98E3A234128AB0086AB95 /* Debug */,
+				A7F98E3B234128AB0086AB95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7F98E3C234128AB0086AB95 /* Build configuration list for PBXNativeTarget "EXCurriculumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F98E3D234128AB0086AB95 /* Debug */,
+				A7F98E3E234128AB0086AB95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7F98E3F234128AB0086AB95 /* Build configuration list for PBXNativeTarget "EXCurriculumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F98E40234128AB0086AB95 /* Debug */,
+				A7F98E41234128AB0086AB95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7F98E07234128A80086AB95 /* Project object */;
+}
