@@ -10,9 +10,39 @@
 		A7CB42AF234A25EF0054A5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42AE234A25EF0054A5F9 /* AppDelegate.swift */; };
 		A7CB42B1234A25EF0054A5F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42B0234A25EF0054A5F9 /* SceneDelegate.swift */; };
 		A7CB42B3234A25EF0054A5F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42B2234A25EF0054A5F9 /* ViewController.swift */; };
-		A7CB42B6234A25EF0054A5F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42B4234A25EF0054A5F9 /* Main.storyboard */; };
 		A7CB42B8234A25F20054A5F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42B7234A25F20054A5F9 /* Assets.xcassets */; };
 		A7CB42BB234A25F20054A5F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42B9234A25F20054A5F9 /* LaunchScreen.storyboard */; };
+		A7CB42CF234A50880054A5F9 /* EXCurriculumProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42CE234A50880054A5F9 /* EXCurriculumProtocols.swift */; };
+		A7CB42D1234A511A0054A5F9 /* EXCurriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42D0234A511A0054A5F9 /* EXCurriculum.swift */; };
+		A7CB42D3234A520A0054A5F9 /* EXCurriculumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42D2234A520A0054A5F9 /* EXCurriculumRouter.swift */; };
+		A7CB42D5234A52210054A5F9 /* EXCurriculumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42D4234A52210054A5F9 /* EXCurriculumPresenter.swift */; };
+		A7CB42D7234A523A0054A5F9 /* EXCurriculumInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42D6234A523A0054A5F9 /* EXCurriculumInteractor.swift */; };
+		A7CB42DA234A528B0054A5F9 /* EXCurriculumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42D8234A528B0054A5F9 /* EXCurriculumViewController.swift */; };
+		A7CB42DB234A528B0054A5F9 /* EXCurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42D9234A528B0054A5F9 /* EXCurriculumViewController.xib */; };
+		A7CB42DF234A532A0054A5F9 /* EXConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42DE234A532A0054A5F9 /* EXConstants.swift */; };
+		A7CB42E2234A535C0054A5F9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42E1234A535C0054A5F9 /* UITableView+Extension.swift */; };
+		A7CB42E4234A537A0054A5F9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42E3234A537A0054A5F9 /* UIImage+Extension.swift */; };
+		A7CB42F7234A60300054A5F9 /* EXEXperticeDotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42E5234A602F0054A5F9 /* EXEXperticeDotTableViewCell.xib */; };
+		A7CB42F8234A60300054A5F9 /* EXLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42E6234A602F0054A5F9 /* EXLoadingTableViewCell.xib */; };
+		A7CB42F9234A60300054A5F9 /* EXTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42E7234A602F0054A5F9 /* EXTitleTableViewCell.swift */; };
+		A7CB42FA234A60300054A5F9 /* EXExperticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42E8234A602F0054A5F9 /* EXExperticeTableViewCell.xib */; };
+		A7CB42FB234A60300054A5F9 /* EXHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42E9234A602F0054A5F9 /* EXHeaderTableViewCell.xib */; };
+		A7CB42FC234A60300054A5F9 /* EXAppTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42EA234A60300054A5F9 /* EXAppTableViewCell.xib */; };
+		A7CB42FD234A60300054A5F9 /* EXAppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42EB234A60300054A5F9 /* EXAppTableViewCell.swift */; };
+		A7CB42FE234A60300054A5F9 /* EXLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42EC234A60300054A5F9 /* EXLoadingTableViewCell.swift */; };
+		A7CB42FF234A60300054A5F9 /* EXDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42ED234A60300054A5F9 /* EXDescriptionTableViewCell.swift */; };
+		A7CB4300234A60300054A5F9 /* EXDotDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42EE234A60300054A5F9 /* EXDotDescriptionTableViewCell.swift */; };
+		A7CB4301234A60300054A5F9 /* EXDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42EF234A60300054A5F9 /* EXDescriptionTableViewCell.xib */; };
+		A7CB4302234A60300054A5F9 /* EXExperticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42F0234A60300054A5F9 /* EXExperticeTableViewCell.swift */; };
+		A7CB4303234A60300054A5F9 /* EXEXperticeDotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42F1234A60300054A5F9 /* EXEXperticeDotTableViewCell.swift */; };
+		A7CB4304234A60300054A5F9 /* EXDotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42F2234A60300054A5F9 /* EXDotTableViewCell.swift */; };
+		A7CB4305234A60300054A5F9 /* EXDotDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42F3234A60300054A5F9 /* EXDotDescriptionTableViewCell.xib */; };
+		A7CB4306234A60300054A5F9 /* EXDotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42F4234A60300054A5F9 /* EXDotTableViewCell.xib */; };
+		A7CB4307234A60300054A5F9 /* EXHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42F5234A60300054A5F9 /* EXHeaderTableViewCell.swift */; };
+		A7CB4308234A60300054A5F9 /* EXTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB42F6234A60300054A5F9 /* EXTitleTableViewCell.xib */; };
+		A7CB430A234A63230054A5F9 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB4309234A63230054A5F9 /* UIVIew+Extension.swift */; };
+		A7CB4311234A65070054A5F9 /* EXPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB430F234A65070054A5F9 /* EXPhotoTableViewCell.swift */; };
+		A7CB4312234A65070054A5F9 /* EXPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CB4310234A65070054A5F9 /* EXPhotoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +50,40 @@
 		A7CB42AE234A25EF0054A5F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7CB42B0234A25EF0054A5F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A7CB42B2234A25EF0054A5F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7CB42B5234A25EF0054A5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7CB42B7234A25F20054A5F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CB42BA234A25F20054A5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7CB42BC234A25F20054A5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7CB42CE234A50880054A5F9 /* EXCurriculumProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXCurriculumProtocols.swift; sourceTree = "<group>"; };
+		A7CB42D0234A511A0054A5F9 /* EXCurriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXCurriculum.swift; sourceTree = "<group>"; };
+		A7CB42D2234A520A0054A5F9 /* EXCurriculumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXCurriculumRouter.swift; sourceTree = "<group>"; };
+		A7CB42D4234A52210054A5F9 /* EXCurriculumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXCurriculumPresenter.swift; sourceTree = "<group>"; };
+		A7CB42D6234A523A0054A5F9 /* EXCurriculumInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXCurriculumInteractor.swift; sourceTree = "<group>"; };
+		A7CB42D8234A528B0054A5F9 /* EXCurriculumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EXCurriculumViewController.swift; path = "EXCurriculum-VIPER/EXCurriculum.swift/EXCurriculumViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A7CB42D9234A528B0054A5F9 /* EXCurriculumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EXCurriculumViewController.xib; path = "EXCurriculum-VIPER/EXCurriculum.swift/EXCurriculumViewController.xib"; sourceTree = SOURCE_ROOT; };
+		A7CB42DE234A532A0054A5F9 /* EXConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXConstants.swift; sourceTree = "<group>"; };
+		A7CB42E1234A535C0054A5F9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		A7CB42E3234A537A0054A5F9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		A7CB42E5234A602F0054A5F9 /* EXEXperticeDotTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXEXperticeDotTableViewCell.xib; sourceTree = "<group>"; };
+		A7CB42E6234A602F0054A5F9 /* EXLoadingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXLoadingTableViewCell.xib; sourceTree = "<group>"; };
+		A7CB42E7234A602F0054A5F9 /* EXTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXTitleTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB42E8234A602F0054A5F9 /* EXExperticeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXExperticeTableViewCell.xib; sourceTree = "<group>"; };
+		A7CB42E9234A602F0054A5F9 /* EXHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		A7CB42EA234A60300054A5F9 /* EXAppTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXAppTableViewCell.xib; sourceTree = "<group>"; };
+		A7CB42EB234A60300054A5F9 /* EXAppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXAppTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB42EC234A60300054A5F9 /* EXLoadingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXLoadingTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB42ED234A60300054A5F9 /* EXDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB42EE234A60300054A5F9 /* EXDotDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXDotDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB42EF234A60300054A5F9 /* EXDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		A7CB42F0234A60300054A5F9 /* EXExperticeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXExperticeTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB42F1234A60300054A5F9 /* EXEXperticeDotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXEXperticeDotTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB42F2234A60300054A5F9 /* EXDotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXDotTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB42F3234A60300054A5F9 /* EXDotDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXDotDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		A7CB42F4234A60300054A5F9 /* EXDotTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXDotTableViewCell.xib; sourceTree = "<group>"; };
+		A7CB42F5234A60300054A5F9 /* EXHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB42F6234A60300054A5F9 /* EXTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXTitleTableViewCell.xib; sourceTree = "<group>"; };
+		A7CB4309234A63230054A5F9 /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		A7CB430F234A65070054A5F9 /* EXPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		A7CB4310234A65070054A5F9 /* EXPhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXPhotoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +116,125 @@
 		A7CB42AD234A25EF0054A5F9 /* EXCurriculum-VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				A7CB42CB234A50380054A5F9 /* EXCurriculum.swift */,
+				A7CB42DC234A530D0054A5F9 /* Constants */,
+				A7CB42E0234A53480054A5F9 /* Extensions */,
 				A7CB42AE234A25EF0054A5F9 /* AppDelegate.swift */,
 				A7CB42B0234A25EF0054A5F9 /* SceneDelegate.swift */,
 				A7CB42B2234A25EF0054A5F9 /* ViewController.swift */,
-				A7CB42B4234A25EF0054A5F9 /* Main.storyboard */,
 				A7CB42B7234A25F20054A5F9 /* Assets.xcassets */,
 				A7CB42B9234A25F20054A5F9 /* LaunchScreen.storyboard */,
 				A7CB42BC234A25F20054A5F9 /* Info.plist */,
 			);
 			path = "EXCurriculum-VIPER";
+			sourceTree = "<group>";
+		};
+		A7CB42C4234A47970054A5F9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB42D2234A520A0054A5F9 /* EXCurriculumRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A7CB42C5234A47A10054A5F9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB42D0234A511A0054A5F9 /* EXCurriculum.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A7CB42C6234A47AB0054A5F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB42D4234A52210054A5F9 /* EXCurriculumPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A7CB42C7234A47DE0054A5F9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB42D6234A523A0054A5F9 /* EXCurriculumInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A7CB42C8234A47E80054A5F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB42C9234A47F40054A5F9 /* Controllers */,
+				A7CB42CA234A48000054A5F9 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7CB42C9234A47F40054A5F9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB42D8234A528B0054A5F9 /* EXCurriculumViewController.swift */,
+				A7CB42D9234A528B0054A5F9 /* EXCurriculumViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7CB42CA234A48000054A5F9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB42EB234A60300054A5F9 /* EXAppTableViewCell.swift */,
+				A7CB42EA234A60300054A5F9 /* EXAppTableViewCell.xib */,
+				A7CB42ED234A60300054A5F9 /* EXDescriptionTableViewCell.swift */,
+				A7CB42EF234A60300054A5F9 /* EXDescriptionTableViewCell.xib */,
+				A7CB42EE234A60300054A5F9 /* EXDotDescriptionTableViewCell.swift */,
+				A7CB42F3234A60300054A5F9 /* EXDotDescriptionTableViewCell.xib */,
+				A7CB42F2234A60300054A5F9 /* EXDotTableViewCell.swift */,
+				A7CB42F4234A60300054A5F9 /* EXDotTableViewCell.xib */,
+				A7CB42F1234A60300054A5F9 /* EXEXperticeDotTableViewCell.swift */,
+				A7CB42E5234A602F0054A5F9 /* EXEXperticeDotTableViewCell.xib */,
+				A7CB42F0234A60300054A5F9 /* EXExperticeTableViewCell.swift */,
+				A7CB42E8234A602F0054A5F9 /* EXExperticeTableViewCell.xib */,
+				A7CB42F5234A60300054A5F9 /* EXHeaderTableViewCell.swift */,
+				A7CB42E9234A602F0054A5F9 /* EXHeaderTableViewCell.xib */,
+				A7CB42EC234A60300054A5F9 /* EXLoadingTableViewCell.swift */,
+				A7CB42E6234A602F0054A5F9 /* EXLoadingTableViewCell.xib */,
+				A7CB42E7234A602F0054A5F9 /* EXTitleTableViewCell.swift */,
+				A7CB42F6234A60300054A5F9 /* EXTitleTableViewCell.xib */,
+				A7CB430F234A65070054A5F9 /* EXPhotoTableViewCell.swift */,
+				A7CB4310234A65070054A5F9 /* EXPhotoTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A7CB42CB234A50380054A5F9 /* EXCurriculum.swift */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB42C8234A47E80054A5F9 /* View */,
+				A7CB42C7234A47DE0054A5F9 /* Interactor */,
+				A7CB42C6234A47AB0054A5F9 /* Presenter */,
+				A7CB42C5234A47A10054A5F9 /* Entity */,
+				A7CB42C4234A47970054A5F9 /* Router */,
+				A7CB42CE234A50880054A5F9 /* EXCurriculumProtocols.swift */,
+			);
+			path = EXCurriculum.swift;
+			sourceTree = "<group>";
+		};
+		A7CB42DC234A530D0054A5F9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB42DE234A532A0054A5F9 /* EXConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A7CB42E0234A53480054A5F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB42E1234A535C0054A5F9 /* UITableView+Extension.swift */,
+				A7CB42E3234A537A0054A5F9 /* UIImage+Extension.swift */,
+				A7CB4309234A63230054A5F9 /* UIVIew+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +295,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CB4306234A60300054A5F9 /* EXDotTableViewCell.xib in Resources */,
+				A7CB42FC234A60300054A5F9 /* EXAppTableViewCell.xib in Resources */,
+				A7CB42FA234A60300054A5F9 /* EXExperticeTableViewCell.xib in Resources */,
+				A7CB42F7234A60300054A5F9 /* EXEXperticeDotTableViewCell.xib in Resources */,
 				A7CB42BB234A25F20054A5F9 /* LaunchScreen.storyboard in Resources */,
 				A7CB42B8234A25F20054A5F9 /* Assets.xcassets in Resources */,
-				A7CB42B6234A25EF0054A5F9 /* Main.storyboard in Resources */,
+				A7CB4312234A65070054A5F9 /* EXPhotoTableViewCell.xib in Resources */,
+				A7CB4305234A60300054A5F9 /* EXDotDescriptionTableViewCell.xib in Resources */,
+				A7CB42DB234A528B0054A5F9 /* EXCurriculumViewController.xib in Resources */,
+				A7CB42F8234A60300054A5F9 /* EXLoadingTableViewCell.xib in Resources */,
+				A7CB4301234A60300054A5F9 /* EXDescriptionTableViewCell.xib in Resources */,
+				A7CB42FB234A60300054A5F9 /* EXHeaderTableViewCell.xib in Resources */,
+				A7CB4308234A60300054A5F9 /* EXTitleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +318,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CB42E2234A535C0054A5F9 /* UITableView+Extension.swift in Sources */,
 				A7CB42B3234A25EF0054A5F9 /* ViewController.swift in Sources */,
+				A7CB42FD234A60300054A5F9 /* EXAppTableViewCell.swift in Sources */,
 				A7CB42AF234A25EF0054A5F9 /* AppDelegate.swift in Sources */,
+				A7CB42E4234A537A0054A5F9 /* UIImage+Extension.swift in Sources */,
+				A7CB42D7234A523A0054A5F9 /* EXCurriculumInteractor.swift in Sources */,
+				A7CB4311234A65070054A5F9 /* EXPhotoTableViewCell.swift in Sources */,
+				A7CB430A234A63230054A5F9 /* UIVIew+Extension.swift in Sources */,
 				A7CB42B1234A25EF0054A5F9 /* SceneDelegate.swift in Sources */,
+				A7CB42DF234A532A0054A5F9 /* EXConstants.swift in Sources */,
+				A7CB42CF234A50880054A5F9 /* EXCurriculumProtocols.swift in Sources */,
+				A7CB4303234A60300054A5F9 /* EXEXperticeDotTableViewCell.swift in Sources */,
+				A7CB4304234A60300054A5F9 /* EXDotTableViewCell.swift in Sources */,
+				A7CB42F9234A60300054A5F9 /* EXTitleTableViewCell.swift in Sources */,
+				A7CB4300234A60300054A5F9 /* EXDotDescriptionTableViewCell.swift in Sources */,
+				A7CB42D5234A52210054A5F9 /* EXCurriculumPresenter.swift in Sources */,
+				A7CB4302234A60300054A5F9 /* EXExperticeTableViewCell.swift in Sources */,
+				A7CB42FE234A60300054A5F9 /* EXLoadingTableViewCell.swift in Sources */,
+				A7CB42D3234A520A0054A5F9 /* EXCurriculumRouter.swift in Sources */,
+				A7CB42DA234A528B0054A5F9 /* EXCurriculumViewController.swift in Sources */,
+				A7CB42FF234A60300054A5F9 /* EXDescriptionTableViewCell.swift in Sources */,
+				A7CB42D1234A511A0054A5F9 /* EXCurriculum.swift in Sources */,
+				A7CB4307234A60300054A5F9 /* EXHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A7CB42B4234A25EF0054A5F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7CB42B5234A25EF0054A5F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A7CB42B9234A25F20054A5F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +484,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.firesapps.EXCurriculum-VIPER";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,7 +501,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.firesapps.EXCurriculum-VIPER";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
