@@ -14,7 +14,7 @@ class SemiCircleBackgroundView: UIView {
 
     override func draw(_ rect: CGRect) {
         let path = UIBezierPath(arcCenter: CGPoint(x: bounds.size.width / 2, y: bounds.size.height - bounds.size.width * 1.5  ), radius: bounds.size.width * 1.5, startAngle: 0.0, endAngle: .pi, clockwise: true)
-        UIColor.lightGray
+        UIColor.lightGray.setFill()
         path.fill()
     }
 }
