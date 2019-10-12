@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70C648F23524345001DB734 /* EXHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C648D23524344001DB734 /* EXHeaderTableViewCell.swift */; };
+		A70C649023524345001DB734 /* EXHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70C648E23524344001DB734 /* EXHeaderTableViewCell.xib */; };
+		A70C64922352459A001DB734 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C64912352459A001DB734 /* UIVIew+Extension.swift */; };
+		A78557862352416500D1DC9D /* EXPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78557802352416400D1DC9D /* EXPhotoTableViewCell.swift */; };
+		A78557872352416500D1DC9D /* EXExpandableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78557812352416400D1DC9D /* EXExpandableTableViewCell.xib */; };
+		A78557882352416500D1DC9D /* EXPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78557822352416400D1DC9D /* EXPhotoTableViewCell.xib */; };
+		A78557892352416500D1DC9D /* EXSeparatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78557832352416400D1DC9D /* EXSeparatorTableViewCell.swift */; };
+		A785578A2352416500D1DC9D /* EXSeparatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78557842352416500D1DC9D /* EXSeparatorTableViewCell.xib */; };
+		A785578B2352416500D1DC9D /* EXExpandableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78557852352416500D1DC9D /* EXExpandableTableViewCell.swift */; };
 		A7F98E13234128A90086AB95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E12234128A90086AB95 /* AppDelegate.swift */; };
 		A7F98E15234128A90086AB95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E14234128A90086AB95 /* SceneDelegate.swift */; };
 		A7F98E17234128A90086AB95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E16234128A90086AB95 /* ViewController.swift */; };
-		A7F98E1A234128A90086AB95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E18234128A90086AB95 /* Main.storyboard */; };
 		A7F98E1C234128AB0086AB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E1B234128AB0086AB95 /* Assets.xcassets */; };
 		A7F98E1F234128AB0086AB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E1D234128AB0086AB95 /* LaunchScreen.storyboard */; };
 		A7F98E2A234128AB0086AB95 /* EXCurriculumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E29234128AB0086AB95 /* EXCurriculumTests.swift */; };
@@ -22,12 +30,6 @@
 		A7F98E5123412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E4D23412B7F0086AB95 /* EXCurriculumViewController.xib */; };
 		A7F98E5223412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E4D23412B7F0086AB95 /* EXCurriculumViewController.xib */; };
 		A7F98E5323412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E4D23412B7F0086AB95 /* EXCurriculumViewController.xib */; };
-		A7F98E5623412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E5423412C100086AB95 /* EXHeaderTableViewCell.swift */; };
-		A7F98E5723412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E5423412C100086AB95 /* EXHeaderTableViewCell.swift */; };
-		A7F98E5823412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E5423412C100086AB95 /* EXHeaderTableViewCell.swift */; };
-		A7F98E5923412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E5523412C100086AB95 /* EXHeaderTableViewCell.xib */; };
-		A7F98E5A23412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E5523412C100086AB95 /* EXHeaderTableViewCell.xib */; };
-		A7F98E5B23412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F98E5523412C100086AB95 /* EXHeaderTableViewCell.xib */; };
 		A7F98E6623412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E6423412C520086AB95 /* EXDescriptionTableViewCell.swift */; };
 		A7F98E6723412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E6423412C520086AB95 /* EXDescriptionTableViewCell.swift */; };
 		A7F98E6823412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98E6423412C520086AB95 /* EXDescriptionTableViewCell.swift */; };
@@ -105,11 +107,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A70C648D23524344001DB734 /* EXHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		A70C648E23524344001DB734 /* EXHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		A70C64912352459A001DB734 /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		A78557802352416400D1DC9D /* EXPhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		A78557812352416400D1DC9D /* EXExpandableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXExpandableTableViewCell.xib; sourceTree = "<group>"; };
+		A78557822352416400D1DC9D /* EXPhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXPhotoTableViewCell.xib; sourceTree = "<group>"; };
+		A78557832352416400D1DC9D /* EXSeparatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXSeparatorTableViewCell.swift; sourceTree = "<group>"; };
+		A78557842352416500D1DC9D /* EXSeparatorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EXSeparatorTableViewCell.xib; sourceTree = "<group>"; };
+		A78557852352416500D1DC9D /* EXExpandableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXExpandableTableViewCell.swift; sourceTree = "<group>"; };
 		A7F98E0F234128A90086AB95 /* EXCurriculum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EXCurriculum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F98E12234128A90086AB95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F98E14234128A90086AB95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A7F98E16234128A90086AB95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7F98E19234128A90086AB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7F98E1B234128AB0086AB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F98E1E234128AB0086AB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7F98E20234128AB0086AB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,8 +132,6 @@
 		A7F98E44234128E00086AB95 /* EXConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXConstants.swift; sourceTree = "<group>"; };
 		A7F98E4C23412B7F0086AB95 /* EXCurriculumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXCurriculumViewController.swift; sourceTree = "<group>"; };
 		A7F98E4D23412B7F0086AB95 /* EXCurriculumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXCurriculumViewController.xib; sourceTree = "<group>"; };
-		A7F98E5423412C100086AB95 /* EXHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXHeaderTableViewCell.swift; sourceTree = "<group>"; };
-		A7F98E5523412C100086AB95 /* EXHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		A7F98E6423412C520086AB95 /* EXDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		A7F98E6523412C520086AB95 /* EXDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		A7F98E6C23412D620086AB95 /* EXDotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXDotTableViewCell.swift; sourceTree = "<group>"; };
@@ -201,7 +209,6 @@
 				A7F98E12234128A90086AB95 /* AppDelegate.swift */,
 				A7F98E14234128A90086AB95 /* SceneDelegate.swift */,
 				A7F98E16234128A90086AB95 /* ViewController.swift */,
-				A7F98E18234128A90086AB95 /* Main.storyboard */,
 				A7F98E1B234128AB0086AB95 /* Assets.xcassets */,
 				A7F98E1D234128AB0086AB95 /* LaunchScreen.storyboard */,
 				A7F98E20234128AB0086AB95 /* Info.plist */,
@@ -232,6 +239,7 @@
 			children = (
 				A7F98E85234139670086AB95 /* UITableView+Extension.swift */,
 				A7F98EB1234160A50086AB95 /* UIImage+Extension.swift */,
+				A70C64912352459A001DB734 /* UIVIew+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,8 +272,14 @@
 		A7F98E4923412B130086AB95 /* Curriculum */ = {
 			isa = PBXGroup;
 			children = (
-				A7F98E5423412C100086AB95 /* EXHeaderTableViewCell.swift */,
-				A7F98E5523412C100086AB95 /* EXHeaderTableViewCell.xib */,
+				A70C648D23524344001DB734 /* EXHeaderTableViewCell.swift */,
+				A70C648E23524344001DB734 /* EXHeaderTableViewCell.xib */,
+				A78557852352416500D1DC9D /* EXExpandableTableViewCell.swift */,
+				A78557812352416400D1DC9D /* EXExpandableTableViewCell.xib */,
+				A78557802352416400D1DC9D /* EXPhotoTableViewCell.swift */,
+				A78557822352416400D1DC9D /* EXPhotoTableViewCell.xib */,
+				A78557832352416400D1DC9D /* EXSeparatorTableViewCell.swift */,
+				A78557842352416500D1DC9D /* EXSeparatorTableViewCell.xib */,
 				A7F98E6423412C520086AB95 /* EXDescriptionTableViewCell.swift */,
 				A7F98E6523412C520086AB95 /* EXDescriptionTableViewCell.xib */,
 				A7F98E9123414C5F0086AB95 /* EXTitleTableViewCell.swift */,
@@ -400,16 +414,18 @@
 			files = (
 				A7F98E1F234128AB0086AB95 /* LaunchScreen.storyboard in Resources */,
 				A7F98E9623414C5F0086AB95 /* EXTitleTableViewCell.xib in Resources */,
+				A78557872352416500D1DC9D /* EXExpandableTableViewCell.xib in Resources */,
+				A70C649023524345001DB734 /* EXHeaderTableViewCell.xib in Resources */,
 				A7F98E1C234128AB0086AB95 /* Assets.xcassets in Resources */,
 				A7F98E7D23412D930086AB95 /* EXAppTableViewCell.xib in Resources */,
 				A7F98EAE23415B970086AB95 /* EXEXperticeDotTableViewCell.xib in Resources */,
 				A7F98E6923412C520086AB95 /* EXDescriptionTableViewCell.xib in Resources */,
 				A7F98E5123412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */,
 				A7F98EA623415B6D0086AB95 /* EXExperticeTableViewCell.xib in Resources */,
-				A7F98E1A234128A90086AB95 /* Main.storyboard in Resources */,
-				A7F98E5923412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */,
 				A7F98E7123412D620086AB95 /* EXDotTableViewCell.xib in Resources */,
 				A7F98E9E234152A90086AB95 /* EXDotDescriptionTableViewCell.xib in Resources */,
+				A78557882352416500D1DC9D /* EXPhotoTableViewCell.xib in Resources */,
+				A785578A2352416500D1DC9D /* EXSeparatorTableViewCell.xib in Resources */,
 				A7F98E8E23414AEC0086AB95 /* EXLoadingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,7 +440,6 @@
 				A7F98E9723414C5F0086AB95 /* EXTitleTableViewCell.xib in Resources */,
 				A7F98E5223412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */,
 				A7F98E7E23412D930086AB95 /* EXAppTableViewCell.xib in Resources */,
-				A7F98E5A23412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */,
 				A7F98EA723415B6D0086AB95 /* EXExperticeTableViewCell.xib in Resources */,
 				A7F98E6A23412C520086AB95 /* EXDescriptionTableViewCell.xib in Resources */,
 				A7F98E9F234152A90086AB95 /* EXDotDescriptionTableViewCell.xib in Resources */,
@@ -441,7 +456,6 @@
 				A7F98E9823414C5F0086AB95 /* EXTitleTableViewCell.xib in Resources */,
 				A7F98E5323412B7F0086AB95 /* EXCurriculumViewController.xib in Resources */,
 				A7F98E7F23412D930086AB95 /* EXAppTableViewCell.xib in Resources */,
-				A7F98E5B23412C100086AB95 /* EXHeaderTableViewCell.xib in Resources */,
 				A7F98EA823415B6D0086AB95 /* EXExperticeTableViewCell.xib in Resources */,
 				A7F98E6B23412C520086AB95 /* EXDescriptionTableViewCell.xib in Resources */,
 				A7F98EA0234152A90086AB95 /* EXDotDescriptionTableViewCell.xib in Resources */,
@@ -461,6 +475,7 @@
 				A7F98E9B234152A90086AB95 /* EXDotDescriptionTableViewCell.swift in Sources */,
 				A7F98EAB23415B970086AB95 /* EXEXperticeDotTableViewCell.swift in Sources */,
 				A7F98E4E23412B7F0086AB95 /* EXCurriculumViewController.swift in Sources */,
+				A785578B2352416500D1DC9D /* EXExpandableTableViewCell.swift in Sources */,
 				A7F98E9323414C5F0086AB95 /* EXTitleTableViewCell.swift in Sources */,
 				A7F98EA323415B6D0086AB95 /* EXExperticeTableViewCell.swift in Sources */,
 				A7F98E8B23414AEC0086AB95 /* EXLoadingTableViewCell.swift in Sources */,
@@ -468,10 +483,13 @@
 				A7F98E45234128E00086AB95 /* EXConstants.swift in Sources */,
 				A7F98E7A23412D930086AB95 /* EXAppTableViewCell.swift in Sources */,
 				A7F98E6623412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */,
-				A7F98E5623412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */,
+				A78557862352416500D1DC9D /* EXPhotoTableViewCell.swift in Sources */,
+				A70C648F23524345001DB734 /* EXHeaderTableViewCell.swift in Sources */,
 				A7F98EB2234160A50086AB95 /* UIImage+Extension.swift in Sources */,
 				A7F98E6E23412D620086AB95 /* EXDotTableViewCell.swift in Sources */,
 				A7F98E86234139670086AB95 /* UITableView+Extension.swift in Sources */,
+				A78557892352416500D1DC9D /* EXSeparatorTableViewCell.swift in Sources */,
+				A70C64922352459A001DB734 /* UIVIew+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +508,6 @@
 				A7F98E9423414C5F0086AB95 /* EXTitleTableViewCell.swift in Sources */,
 				A7F98E7B23412D930086AB95 /* EXAppTableViewCell.swift in Sources */,
 				A7F98EAC23415B970086AB95 /* EXEXperticeDotTableViewCell.swift in Sources */,
-				A7F98E5723412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */,
 				A7F98E87234139670086AB95 /* UITableView+Extension.swift in Sources */,
 				A7F98E6723412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */,
 			);
@@ -511,7 +528,6 @@
 				A7F98E9523414C5F0086AB95 /* EXTitleTableViewCell.swift in Sources */,
 				A7F98E7C23412D930086AB95 /* EXAppTableViewCell.swift in Sources */,
 				A7F98EAD23415B970086AB95 /* EXEXperticeDotTableViewCell.swift in Sources */,
-				A7F98E5823412C100086AB95 /* EXHeaderTableViewCell.swift in Sources */,
 				A7F98E88234139670086AB95 /* UITableView+Extension.swift in Sources */,
 				A7F98E6823412C520086AB95 /* EXDescriptionTableViewCell.swift in Sources */,
 			);
@@ -533,14 +549,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A7F98E18234128A90086AB95 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7F98E19234128A90086AB95 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A7F98E1D234128AB0086AB95 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

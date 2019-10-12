@@ -9,17 +9,31 @@
 import UIKit
 
 public extension UIImageView {
-
-    func setCustomImage(_ imgURL: URL?) {
-        guard let imgURL = imgURL else {
-            self.image = UIImage(named: "noImage")
-            return
+     func load(_ url: URL){
+           DispatchQueue.global().async { [weak self] in
+               if let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
+                   DispatchQueue.main.async {
+                       self?.image = image
+                   }
+               }else {
+                   self?.image = UIImage(named: BAD_IMAGE)
+               }
+           }
+       }
+       
+       func load(url: URL?){
+           guard let url = url else {
+               self.image = UIImage(named: BAD_IMAGE)
+               return
+           }
+           load(url)
+       }
+    
+        func setRounded() {
+            layer.borderWidth = 2
+            layer.masksToBounds = false
+            layer.borderColor = UIColor.white.cgColor
+            layer.cornerRadius = frame.height/2
+            clipsToBounds = true
         }
-        DispatchQueue.global().async {
-            let data = try? Data(contentsOf: imgURL)
-            DispatchQueue.main.async {
-                self.image = data != nil ? UIImage(data: data!) : UIImage(named: "noImage")
-            }
-        }
-    }
 }

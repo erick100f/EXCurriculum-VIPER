@@ -27,10 +27,8 @@ class EXAppTableViewCell: UITableViewCell {
     func setup() {
         if let app = app {
             nameLabel.text = app.name
-            if let url = app.imageURL {
-                appImageView.setCustomImage(url)
-            }
-            
+            appImageView.load(url: app.imageURL)
+            appImageView.contentMode = .scaleAspectFill
         }
     }
 

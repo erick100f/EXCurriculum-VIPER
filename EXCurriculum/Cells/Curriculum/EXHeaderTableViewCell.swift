@@ -16,7 +16,6 @@ class EXHeaderTableViewCell: UITableViewCell {
         }
     }
     
-    @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var birthdayLabel: UILabel!
@@ -33,10 +32,6 @@ class EXHeaderTableViewCell: UITableViewCell {
             tituloLabel.text = cv.titulo
             birthdayLabel.text = cv .birthday
             languagesLabel.text = cv.topLanguages.joined(separator: " /")
-            if let url = cv.photoURL {
-                photoImageView.setCustomImage(url)
-            }
-            photoImageView.contentMode = .scaleAspectFill
         }
         
     }
