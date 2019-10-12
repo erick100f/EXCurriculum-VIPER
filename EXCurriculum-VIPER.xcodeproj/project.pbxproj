@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A78E350123521D2D005DB3ED /* EXSeparatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78E34FF23521D2D005DB3ED /* EXSeparatorTableViewCell.swift */; };
+		A78E350223521D2D005DB3ED /* EXSeparatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78E350023521D2D005DB3ED /* EXSeparatorTableViewCell.xib */; };
+		A78E35052352203C005DB3ED /* EXExpandableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78E35032352203C005DB3ED /* EXExpandableTableViewCell.swift */; };
+		A78E35062352203C005DB3ED /* EXExpandableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78E35042352203C005DB3ED /* EXExpandableTableViewCell.xib */; };
 		A7CB42AF234A25EF0054A5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42AE234A25EF0054A5F9 /* AppDelegate.swift */; };
 		A7CB42B1234A25EF0054A5F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42B0234A25EF0054A5F9 /* SceneDelegate.swift */; };
 		A7CB42B3234A25EF0054A5F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB42B2234A25EF0054A5F9 /* ViewController.swift */; };
@@ -46,6 +50,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A78E34FF23521D2D005DB3ED /* EXSeparatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXSeparatorTableViewCell.swift; sourceTree = "<group>"; };
+		A78E350023521D2D005DB3ED /* EXSeparatorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXSeparatorTableViewCell.xib; sourceTree = "<group>"; };
+		A78E35032352203C005DB3ED /* EXExpandableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXExpandableTableViewCell.swift; sourceTree = "<group>"; };
+		A78E35042352203C005DB3ED /* EXExpandableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXExpandableTableViewCell.xib; sourceTree = "<group>"; };
 		A7CB42AB234A25EF0054A5F9 /* EXCurriculum-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EXCurriculum-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CB42AE234A25EF0054A5F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7CB42B0234A25EF0054A5F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +210,10 @@
 				A7CB42F6234A60300054A5F9 /* EXTitleTableViewCell.xib */,
 				A7CB430F234A65070054A5F9 /* EXPhotoTableViewCell.swift */,
 				A7CB4310234A65070054A5F9 /* EXPhotoTableViewCell.xib */,
+				A78E34FF23521D2D005DB3ED /* EXSeparatorTableViewCell.swift */,
+				A78E350023521D2D005DB3ED /* EXSeparatorTableViewCell.xib */,
+				A78E35032352203C005DB3ED /* EXExpandableTableViewCell.swift */,
+				A78E35042352203C005DB3ED /* EXExpandableTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -303,8 +315,10 @@
 				A7CB42B8234A25F20054A5F9 /* Assets.xcassets in Resources */,
 				A7CB4312234A65070054A5F9 /* EXPhotoTableViewCell.xib in Resources */,
 				A7CB4305234A60300054A5F9 /* EXDotDescriptionTableViewCell.xib in Resources */,
+				A78E350223521D2D005DB3ED /* EXSeparatorTableViewCell.xib in Resources */,
 				A7CB42DB234A528B0054A5F9 /* EXCurriculumViewController.xib in Resources */,
 				A7CB42F8234A60300054A5F9 /* EXLoadingTableViewCell.xib in Resources */,
+				A78E35062352203C005DB3ED /* EXExpandableTableViewCell.xib in Resources */,
 				A7CB4301234A60300054A5F9 /* EXDescriptionTableViewCell.xib in Resources */,
 				A7CB42FB234A60300054A5F9 /* EXHeaderTableViewCell.xib in Resources */,
 				A7CB4308234A60300054A5F9 /* EXTitleTableViewCell.xib in Resources */,
@@ -320,6 +334,7 @@
 			files = (
 				A7CB42E2234A535C0054A5F9 /* UITableView+Extension.swift in Sources */,
 				A7CB42B3234A25EF0054A5F9 /* ViewController.swift in Sources */,
+				A78E350123521D2D005DB3ED /* EXSeparatorTableViewCell.swift in Sources */,
 				A7CB42FD234A60300054A5F9 /* EXAppTableViewCell.swift in Sources */,
 				A7CB42AF234A25EF0054A5F9 /* AppDelegate.swift in Sources */,
 				A7CB42E4234A537A0054A5F9 /* UIImage+Extension.swift in Sources */,
@@ -338,6 +353,7 @@
 				A7CB42FE234A60300054A5F9 /* EXLoadingTableViewCell.swift in Sources */,
 				A7CB42D3234A520A0054A5F9 /* EXCurriculumRouter.swift in Sources */,
 				A7CB42DA234A528B0054A5F9 /* EXCurriculumViewController.swift in Sources */,
+				A78E35052352203C005DB3ED /* EXExpandableTableViewCell.swift in Sources */,
 				A7CB42FF234A60300054A5F9 /* EXDescriptionTableViewCell.swift in Sources */,
 				A7CB42D1234A511A0054A5F9 /* EXCurriculum.swift in Sources */,
 				A7CB4307234A60300054A5F9 /* EXHeaderTableViewCell.swift in Sources */,
@@ -477,6 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KU8Y2WSFYT;
 				INFOPLIST_FILE = "EXCurriculum-VIPER/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KU8Y2WSFYT;
 				INFOPLIST_FILE = "EXCurriculum-VIPER/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

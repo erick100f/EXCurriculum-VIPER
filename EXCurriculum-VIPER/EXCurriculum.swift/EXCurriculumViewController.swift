@@ -21,7 +21,9 @@ class EXCurriculumViewController: UIViewController {
         case jobAchievement(text: String)
         case app(app: EXApp)
         case loading
+        case separator
     }
+    
     var presentor:ViewToPresenterProtocol?
     
     var curriculum:EXCurriculum?
@@ -32,6 +34,15 @@ class EXCurriculumViewController: UIViewController {
             }
         }
     }
+    var indexPathExpander: IndexPath? = nil{
+        didSet{
+            if let oldValue = oldValue {
+                let cell = tableView.cellForRow(at: oldValue) as? EXExpandableTableViewCell
+                cell?.plusLabel.text = "+"
+            }
+        }
+    }
+            
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -45,7 +56,7 @@ class EXCurriculumViewController: UIViewController {
     }
     
     func setup(){
-        tableView.allowsSelection = false
+//        tableView.allowsSelection = false
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorInset = .zero
@@ -59,10 +70,13 @@ class EXCurriculumViewController: UIViewController {
         tableView.register(cellType: EXTitleTableViewCell.self)
         tableView.register(cellType: EXDescriptionTableViewCell.self)
         tableView.register(cellType: EXDotTableViewCell.self)
-        tableView.register(cellType: EXDotDescriptionTableViewCell.self)
+        tableView.register(cellType: EXExpandableTableViewCell.self)
         tableView.register(cellType: EXExperticeTableViewCell.self)
         tableView.register(cellType: EXEXperticeDotTableViewCell.self)
         tableView.register(cellType: EXAppTableViewCell.self)
+        tableView.register(cellType: EXSeparatorTableViewCell.self)
+        
+        
     }
 
 }
@@ -76,8 +90,9 @@ extension EXCurriculumViewController:PresenterToViewProtocol{
             rolls.append(.photo(url: cv.photoURL))
             rolls.append(.header(cv: cv))
              if let technical = cv.technical {
-                 rolls.append(.title(txt: technical.title))
+                rolls.append(.title(txt: technical.title))
                  for item in technical.items {
+                    
                      rolls.append(.dot(txt: item.title))
                      for skill in item.skills {
                          rolls.append(.dotDescription(skill:skill))
@@ -104,8 +119,8 @@ extension EXCurriculumViewController:PresenterToViewProtocol{
     }
     
     func showError() {
-        let alert = UIAlertController(title: "Alert", message: "Problem Fetching Notice", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+        let alert = UIAlertController(title: "Alert", message: "Problem Fetching", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
@@ -113,12 +128,33 @@ extension EXCurriculumViewController:PresenterToViewProtocol{
 
 extension EXCurriculumViewController: UITableViewDelegate,UITableViewDataSource  {
     
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return UITableView.automaticDimension
+//    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        let rollRow = rolls[indexPath.row]
+        
+        switch rollRow {
+        case .dotDescription:
+            if let indexPathExpander = self.indexPathExpander {
+                if indexPath == indexPathExpander{
+                    return UITableView.automaticDimension
+               }
+            }
+            return 44
+        default:
+            return  UITableView.automaticDimension
+        }
+//        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.rolls.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       didPress(indexPath: indexPath)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -143,8 +179,13 @@ extension EXCurriculumViewController: UITableViewDelegate,UITableViewDataSource 
             cell.label.text = txt
             return cell
         case .dotDescription(let skill):
-            let cell = tableView.dequeueReusableCell(with: EXDotDescriptionTableViewCell.self, for: indexPath)
+            let cell = tableView.dequeueReusableCell(with: EXExpandableTableViewCell.self, for: indexPath)
             cell.skill = skill
+            if let indexPathExpander = self.indexPathExpander, indexPath.row == indexPathExpander.row{
+//                cell.plusLabel.text = "-"
+            }else {
+                cell.plusLabel.text = "+"
+            }
             return cell
         case .job(let job):
             let cell = tableView.dequeueReusableCell(with: EXExperticeTableViewCell.self, for: indexPath)
@@ -160,8 +201,28 @@ extension EXCurriculumViewController: UITableViewDelegate,UITableViewDataSource 
             return cell
         case .loading:
             return EXLoadingTableViewCell()
+        case .separator:
+            return tableView.dequeueReusableCell(with: EXSeparatorTableViewCell.self, for: indexPath)
         default:
             return UITableViewCell()
+        }
+    }
+    
+    func didPress(indexPath: IndexPath) {
+        
+        if let indexPathExpander = self.indexPathExpander, indexPath.row == indexPathExpander.row{
+            self.indexPathExpander = nil
+            let cell = tableView.cellForRow(at: indexPath) as? EXExpandableTableViewCell
+            cell?.plusLabel.text = "+"
+        }else {
+            self.indexPathExpander = indexPath
+            let cell = tableView.cellForRow(at: indexPath) as? EXExpandableTableViewCell
+            cell?.plusLabel.text = "-"
+        }
+        
+        UIView.animate(withDuration: 0.1) {
+            self.tableView.beginUpdates()
+            self.tableView.endUpdates()
         }
     }
     
