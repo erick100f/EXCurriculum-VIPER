@@ -36,9 +36,8 @@ class EXCurriculumViewController: UIViewController {
     }
     var indexPathExpander: IndexPath? = nil{
         didSet{
-            if let oldValue = oldValue {
-                let cell = tableView.cellForRow(at: oldValue) as? EXExpandableTableViewCell
-                cell?.plusLabel.text = "+"
+            if let oldValue = oldValue, let cell = tableView.cellForRow(at: oldValue) as? EXExpandableTableViewCell {
+                cell.setIdentifiel(.plus)
             }
         }
     }
@@ -181,10 +180,11 @@ extension EXCurriculumViewController: UITableViewDelegate,UITableViewDataSource 
         case .dotDescription(let skill):
             let cell = tableView.dequeueReusableCell(with: EXExpandableTableViewCell.self, for: indexPath)
             cell.skill = skill
+            
             if let indexPathExpander = self.indexPathExpander, indexPath.row == indexPathExpander.row{
 //                cell.plusLabel.text = "-"
             }else {
-                cell.plusLabel.text = "+"
+                cell.setIdentifiel(.plus)
             }
             return cell
         case .job(let job):
@@ -210,14 +210,21 @@ extension EXCurriculumViewController: UITableViewDelegate,UITableViewDataSource 
     
     func didPress(indexPath: IndexPath) {
         
-        if let indexPathExpander = self.indexPathExpander, indexPath.row == indexPathExpander.row{
+        if let indexPathExpander = self.indexPathExpander, indexPath.row == indexPathExpander.row {
             self.indexPathExpander = nil
-            let cell = tableView.cellForRow(at: indexPath) as? EXExpandableTableViewCell
-            cell?.plusLabel.text = "+"
+            if let cell = tableView.cellForRow(at: indexPath) as? EXExpandableTableViewCell {
+                cell.setIdentifiel(.plus)
+            }
+//            (tableView.cellForRow(at: indexPath) as? EXExpandableTableViewCell)
+//            let cell = tableView.cellForRow(at: indexPath) as? EXExpandableTableViewCell
+//            cell?.plusLabel.text = "+"
         }else {
             self.indexPathExpander = indexPath
-            let cell = tableView.cellForRow(at: indexPath) as? EXExpandableTableViewCell
-            cell?.plusLabel.text = "-"
+            if let cell = tableView.cellForRow(at: indexPath) as? EXExpandableTableViewCell {
+                cell.setIdentifiel(.less)
+            }
+//            let cell = tableView.cellForRow(at: indexPath) as? EXExpandableTableViewCell
+//            cell?.plusLabel.text = "-"
         }
         
         UIView.animate(withDuration: 0.1) {

@@ -10,6 +10,11 @@ import UIKit
 
 class EXExpandableTableViewCell: UITableViewCell {
     
+    enum MoreOrLess: String {
+        case plus = "+"
+        case less = "-"
+    }
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var plusLabel: UILabel!
@@ -22,13 +27,17 @@ class EXExpandableTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setIdentifiel( .plus)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setIdentifiel(_ txt : MoreOrLess){
+        plusLabel.text = txt.rawValue
     }
     
     func setup(){
